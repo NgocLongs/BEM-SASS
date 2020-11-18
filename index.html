@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice BEM - SASS</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navigation">
+        <div class="navigation__logo">
+            <b>BR</b> Architects
+        </div>
+        <div class="navigation__menu">
+            <a href="">Projects</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Architecture">
+            <div class="header__content">
+                <h1>
+                    <span class="header__content--br"><b>BR</b></span>
+                    <span class="header__content--architects">Architects</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="content">
+            <div class="content__title">
+                <h2>Projects</h2>
+            </div>
+
+            <!-- Thumbnail 1 -->
+            <div class="content__thumbnail">
+                <!-- Box -->
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Summer House</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Box -->
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Brick House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Renovated House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Barn House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 2 -->
+            <div class="content__thumbnail">
+                <!-- Box -->
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Summer House</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Box -->
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Brick House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Renovated House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                        <div class="content__thumbnail__box--text">
+                            <p>Barn House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- About Section -->
+        <div class="about">
+            <div class="about__title">
+                <h2>About</h2>
+            </div>
+            <div class="about__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="about__thumbnail">
+                <div class="about__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Barn House">
+                        <div>
+                            <h2 class="about__thumbnail__box--title">John Doe</h2>
+                            <p class="about__thumbnail__box--blur">CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button class="button about__thumbnail__box--button">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Barn House">
+                        <div>
+                            <h2 class="about__thumbnail__box--title">Jane Doe</h2>
+                            <p class="about__thumbnail__box--blur">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                            </p>
+                            <button class="button about__thumbnail__box--button">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Barn House">
+                        <div>
+                            <h2 class="about__thumbnail__box--title">Mike Ross</h2>
+                            <p class="about__thumbnail__box--blur">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button class="button about__thumbnail__box--button">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__thumbnail__box">
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Barn House">
+                        <div>
+                            <h2 class="about__thumbnail__box--title">Dan Star</h2>
+                            <p class="about__thumbnail__box--blur">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button class="button about__thumbnail__box--button">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
