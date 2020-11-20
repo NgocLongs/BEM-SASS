@@ -1,0 +1,142 @@
+.container {
+    max-width: 1532px;
+    margin: 0 auto;
+    padding: 8px 16px;
+
+    .projects {
+
+        &__title {
+            padding: 32px 16px;
+
+            &__projects {
+                padding: 16px 0;
+            }
+
+        }
+    
+        &__wrapper {
+            @extend %wrapper-section;
+        }
+
+        &__thumbnail {
+            padding: 0 8px; 
+            margin-bottom: 16px;
+            position: relative;
+            // flex: 22.99999%;
+            max-width: calc( 100% / 4 - 16px );
+
+            img {
+                width: 100%;
+            }
+
+            &__text {
+                position: absolute;
+                top: 0;
+                padding: 10px;
+                background-color: #000;
+                color: #ffffff;
+                font-size: 15px;
+            }
+
+            @media (max-width: 600px) {
+                // flex: 100%;
+                max-width: calc( 100% ) !important;
+            }
+
+            @media (max-width: 992px) {
+                // flex: 48%;
+                max-width: calc( 100% / 2 - 16px );
+            }
+        }
+    }
+    
+    .about { 
+        font-size: 15px;
+
+        &__content {
+            padding: 32px 16px;
+
+            &__title {
+                padding: 16px 0;
+                margin: 10px 0;
+            }
+    
+            &__text {
+                margin: 15px 0;
+                padding-bottom: 32px;
+            }
+        }
+    
+        &__wrapper {
+            @extend %wrapper-section;
+        }
+
+        &__card {
+            margin: 8px;
+            // flex: 22.99999%;
+            max-width: calc( 100% / 4 - 16px );
+
+            img {
+                width: 100%;
+                filter: grayscale(80%);
+            }
+
+            p {
+                padding: 10px 0;
+            }
+
+            &__title {
+                font-weight: 100;
+                padding: 10px 0;
+            }
+
+            &__blur {
+                opacity: 0.6;
+            }
+
+            @media (max-width: 600px) {
+                // flex: 100%;
+                max-width: calc( 100% ) !important;
+            }
+
+            @media (max-width: 992px) {
+                // flex: 47%;
+                max-width: calc( 100% / 2 - 16px );
+            }
+        }
+    }
+    
+    .contact {
+        padding: 32px 16px;
+
+        &__title {
+            padding: 16px 0px;
+            margin: 10px 0px;
+        }
+    
+        &__desc {
+            margin: 15px 0;
+        }
+    
+        &__form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__input {
+                width: 100%;
+                display: block;
+                padding: 8px;
+                margin: 16px 0px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    
+    .map {
+        padding: 0 16px;
+        img {
+            width: 100%;
+        }
+    }
+}

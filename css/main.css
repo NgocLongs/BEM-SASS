@@ -1,3 +1,11 @@
+.container .about__wrapper, .container .projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0 auto;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -28,7 +36,7 @@
   color: #000;
 }
 .navigation__menu a:hover {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 @media (max-width: 600px) {
   .navigation__menu {
@@ -69,6 +77,43 @@
   }
 }
 
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+}
+.footer__text {
+  margin: 15px 0;
+}
+.footer__link {
+  color: #fff;
+}
+
+.button {
+  display: block;
+  border-radius: 3px;
+  padding: 7px 12px;
+  border: 1px solid #D5D5D5;
+  font: 700 13px/18px Helvetica, arial;
+}
+.button--contact {
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  margin: 20px 0;
+}
+.button--contact:hover {
+  background-color: #ccc;
+}
+.button--send {
+  background-color: #000;
+  color: #ccc;
+  margin: 25px 0;
+  padding: 12px 16px;
+  border: none;
+}
+
 .container {
   max-width: 1532px;
   margin: 0 auto;
@@ -81,22 +126,15 @@
   padding: 16px 0;
 }
 .container .projects__thumbnail {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 0 8px;
-  box-sizing: border-box;
-}
-.container .projects__thumbnail__box {
   padding: 0 8px;
   margin-bottom: 16px;
   position: relative;
   max-width: calc( 100% / 4 - 16px );
 }
-.container .projects__thumbnail__box img {
+.container .projects__thumbnail img {
   width: 100%;
 }
-.container .projects__thumbnail__box--text {
+.container .projects__thumbnail__text {
   position: absolute;
   top: 0;
   padding: 10px;
@@ -105,12 +143,12 @@
   font-size: 15px;
 }
 @media (max-width: 600px) {
-  .container .projects__thumbnail__box {
+  .container .projects__thumbnail {
     max-width: calc( 100% ) !important;
   }
 }
 @media (max-width: 992px) {
-  .container .projects__thumbnail__box {
+  .container .projects__thumbnail {
     max-width: calc( 100% / 2 - 16px );
   }
 }
@@ -120,70 +158,41 @@
 .container .about__content {
   padding: 32px 16px;
 }
-.container .about__content--title {
+.container .about__content__title {
   padding: 16px 0;
   margin: 10px 0;
 }
-.container .about__content--text {
+.container .about__content__text {
   margin: 15px 0;
   padding-bottom: 32px;
 }
-.container .about__thumbnail {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 8px;
-}
-.container .about__thumbnail__box {
+.container .about__card {
   margin: 8px;
   max-width: calc( 100% / 4 - 16px );
 }
-.container .about__thumbnail__box img {
+.container .about__card img {
   width: 100%;
   filter: grayscale(80%);
 }
-.container .about__thumbnail__box p {
+.container .about__card p {
   padding: 10px 0;
 }
-.container .about__thumbnail__box--title {
+.container .about__card__title {
   font-weight: 100;
   padding: 10px 0;
 }
-.container .about__thumbnail__box--blur {
+.container .about__card__blur {
   opacity: 0.6;
 }
-.container .about__thumbnail__box--button {
-  border: none !important;
-  width: 100%;
-  padding: 12px 0 !important;
-  margin: 20px 0;
-}
-.container .about__thumbnail__box--button:hover {
-  background-color: #ccc;
-}
 @media (max-width: 600px) {
-  .container .about__thumbnail__box {
+  .container .about__card {
     max-width: calc( 100% ) !important;
   }
 }
 @media (max-width: 992px) {
-  .container .about__thumbnail__box {
+  .container .about__card {
     max-width: calc( 100% / 2 - 16px );
   }
-}
-.container .button {
-  border-radius: 3px;
-  padding: 7px 12px;
-  border: 1px solid #D5D5D5;
-  font: 700 13px/18px Helvetica, arial;
-}
-.container .button--send {
-  background-color: #000;
-  color: #ccc;
-  margin: 25px 0;
-  padding: 12px 16px;
-  border: none;
 }
 .container .contact {
   padding: 32px 16px;
@@ -212,19 +221,6 @@
 }
 .container .map img {
   width: 100%;
-}
-
-.footer {
-  background-color: #000;
-  color: #fff;
-  padding: 16px 0;
-  text-align: center;
-}
-.footer__text {
-  margin: 15px 0;
-}
-.footer__link {
-  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
